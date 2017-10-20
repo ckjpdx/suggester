@@ -26,7 +26,27 @@ $('document').ready(function(){
       cSharpScore++;
       phpScore++;
     }
-
+    if ($('input[name="q4"]:checked').val() === 'red'){
+      rubyScore++;
+      cSharpScore++;
+    } else {
+      javaScore++;
+      phpScore++;
+    }
+    switch ($('input[name="q5"]:checked').val()){
+      case 'cSharp':
+        cSharpScore++;
+        break;
+      case 'java':
+        javaScore++;
+        break;
+      case 'php':
+        phpScore++;
+        break;
+      case 'ruby':
+        rubyScore++;
+        break;
+    }
     console.log('c# ' + cSharpScore);
     console.log('java ' + javaScore);
     console.log('php ' + phpScore);
