@@ -48,11 +48,13 @@ $('document').ready(function(){
       winnerArr.push('Ruby')
     }
 
+    $('#signUpDiv').slideDown();
+    $('#suggesterDiv').slideUp();
     $('#resultsDiv').show();
     if (winnerArr.length > 1){
-      $('#resultsDiv').text('You seem to like ' + winnerArr[0] + ' and ' + winnerArr[1] + 'the most. You should check those things out!');
+      $('#resultsDiv').text('You\'d probably like ' + winnerArr[0] + ' or ' + winnerArr[1] + '. You should check those things out!');
     } else {
-      $('#resultsDiv').text('Looks like your definitely a ' + winnerArr[0] + 'person. Sign up today!')
+      $('#resultsDiv').text('Looks like you\'re definitely a ' + winnerArr[0] + ' person. Sign up today!')
     }
 
   });

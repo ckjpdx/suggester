@@ -13,10 +13,11 @@
   </head>
   <body>
     <div class="container">
+      <img src="https://static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/t/57cf3de246c3c4d2933aa57c/1508389428382/?format=1500w" alt="Epicodus Logo">
       <h1>Epicodus Track Suggester</h1>
       <p>Interested in coding but not sure which language to choose? Use our Track Suggester!</p>
-      <h2>Answer the following questions:</h2>
-      <div>
+      <div id="suggesterDiv">
+        <h2>Answer the following questions:</h2>
         <form id="suggesterForm">
           <fieldset id="tester" class="form-group">
             <legend>Where would you rather spend most of your time working:</legend>
@@ -28,8 +29,8 @@
             </div>
             <div class="form-check">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="q1" id="optionsRadios2" value="">
-                Back-end
+              <input type="radio" class="form-check-input" name="q1" id="optionsRadios2" value="">
+              Back-end
             </label>
             </div>
           </fieldset>
@@ -49,8 +50,8 @@
             </div>
           </fieldset>
           <fieldset class="form-group">
-            <legend>What would you like your job to mostly consist of:</legend>
-            <div class="form-check">
+          <legend>What would you like your job to mostly consist of:</legend>
+          <div class="form-check">
               <label class="form-check-label">
                 <input type="radio" class="form-check-input" name="q3" id="optionsRadios5" value="dynamic" checked>
                 Dynamic viewer content and customer info gathering / tailoring
@@ -58,13 +59,22 @@
             </div>
             <div class="form-check">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="q3" id="optionsRadios6" value="option2">
-                Security, encryption, and database management
+              <input type="radio" class="form-check-input" name="q3" id="optionsRadios6" value="option2">
+              Security, encryption, and database management
             </label>
             </div>
           </fieldset>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+      </div>
+      <div id="resultsDiv">
+        <!-- Results go here-->
+      </div>
+      <div id="signUpDiv">
+        <a href="https://www.epicodus.com/apply/">
+          <img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/1880/s300/epicodus-ico.png" alt="Epicodus">
+          <h2>Sign Up Today!</h2>
+        </a>
       </div>
     </div>
   </body>

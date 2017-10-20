@@ -1,0 +1,15 @@
+body {
+  color: #4A4A4A;
+}
+#resultsDiv {
+  padding: 10px;
+  font-size: 2em;
+  display: none;
+}
+#signUpDiv {
+  display: none;
+  text-align: center;
+}
+#signUpDiv img {
+  max-width: 80px;
+}
