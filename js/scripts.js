@@ -1,4 +1,8 @@
 $('document').ready(function(){
+
+  var userName = prompt('Hello! We are on a first name basis here at Epicodus. What do your friends call you?');
+  $('#userNameSpan').text(userName);
+
   $('#suggesterForm').submit(function(event){
     event.preventDefault();
     var cSharpScore = 0;
@@ -72,9 +76,9 @@ $('document').ready(function(){
     $('#suggesterDiv').slideUp();
     $('#resultsDiv').show();
     if (winnerArr.length > 1){
-      $('#resultsDiv').text('You\'d probably like ' + winnerArr[0] + ' or ' + winnerArr[1] + '. You should check those things out!');
+      $('#resultsDiv').text('According to your responses, it looks like you\'d probably enjoy ' + winnerArr[0] + ' or ' + winnerArr[1] + '. Looks like you should check both of those things out, ' + userName);
     } else {
-      $('#resultsDiv').text('Looks like you\'re definitely a ' + winnerArr[0] + ' person. Sign up today!')
+      $('#resultsDiv').text('According to your responses it looks like you\'re a ' + winnerArr[0] + ' person, ' + userName + '! We would suggest you look into this language as an option first.')
     }
 
   });
