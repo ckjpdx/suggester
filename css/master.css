@@ -1,6 +1,10 @@
 body {
   color: #4A4A4A;
 }
+.codeBG {
+  background-size: cover;
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/TOEwt0C/world-digital-binary-computer-data-code-cyberspace-graphic-animation_4k-zipaq__F0000.png);
+}
 #resultsDiv {
   padding: 10px;
   font-size: 2em;
